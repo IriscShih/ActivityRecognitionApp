@@ -36,7 +36,6 @@ public class ActivityAlgorithm {
 
     public boolean calculate() {
 
-        //  Here you can put your data
         for(SensorData dataItem:sensorData) {
             double accX = dataItem.getAccX();
             double accY = dataItem.getAccY();
