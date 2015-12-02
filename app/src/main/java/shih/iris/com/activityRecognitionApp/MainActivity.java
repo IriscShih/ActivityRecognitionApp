@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         output = (TextView)findViewById(R.id.output);
         output.setText("Checkout Your Activity!");
 
-        algorithm = new ActivityAlgorithm();
+        algorithm = new ActivityAlgorithm(this);
 
         btn = (Button) findViewById(R.id.cmdRecord);
         btn.setOnClickListener(this);
@@ -63,6 +63,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             }
 
         });
+
+
     }
 
     @Override

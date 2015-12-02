@@ -16,7 +16,7 @@
 
 
 // helper function to be called in Java for making svm-train
-extern "C" void Java_shih_iris_com_activityRecognitionApp_MainActivity_jniSvmTrain(JNIEnv *env, jobject obj, jstring cmdIn){
+extern "C" void Java_shih_iris_com_activityRecognitionApp_ActivityAlgorithm_jniSvmTrain(JNIEnv *env, jobject obj, jstring cmdIn){
 	const char *cmd = env->GetStringUTFChars(cmdIn, 0);
 	debug("jniSvmTrain cmd = %s", cmd);
 
@@ -41,7 +41,7 @@ extern "C" void Java_shih_iris_com_activityRecognitionApp_MainActivity_jniSvmTra
 }
 
 // helper function to be called in Java for making svm-predict
-extern "C" void Java_shih_iris_com_activityRecognitionApp_MainActivity_jniSvmPredict(JNIEnv *env, jobject obj, jstring cmdIn){
+extern "C" void Java_shih_iris_com_activityRecognitionApp_ActivityAlgorithm_jniSvmPredict(JNIEnv *env, jobject obj, jstring cmdIn){
 	const char *cmd = env->GetStringUTFChars(cmdIn, 0);
 	debug("jniSvmPredict cmd = %s", cmd);
 
@@ -70,11 +70,11 @@ extern "C" void Java_shih_iris_com_activityRecognitionApp_MainActivity_jniSvmPre
 /*
 *  just some activityRecognitionApp functions -> can be removed
 */
-extern "C" JNIEXPORT int JNICALL Java_shih_iris_com_activityRecognitionApp_MainActivity_activityRecognitionAppInt(JNIEnv * env, jobject obj){
+extern "C" JNIEXPORT int JNICALL Java_shih_iris_com_activityRecognitionApp_ActivityAlgorithm_activityRecognitionAppInt(JNIEnv * env, jobject obj){
 	return 5566;
 }
 
-extern "C" void Java_shih_iris_com_activityRecognitionApp_MainActivity_activityRecognitionAppLog(JNIEnv *env, jobject obj, jstring logThis){
+extern "C" void Java_shih_iris_com_activityRecognitionApp_ActivityAlgorithm_activityRecognitionAppLog(JNIEnv *env, jobject obj, jstring logThis){
 	const char * szLogThis = env->GetStringUTFChars(logThis, 0);
 	debug("%s",szLogThis);
 
