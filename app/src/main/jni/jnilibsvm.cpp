@@ -1,5 +1,5 @@
 //==========================================================================
-// 2015/08/31: yctung: add this new test for libSVM in jni interface 
+// 2015/08/31: yctung: add this new activityRecognitionApp for libSVM in jni interface 
 //==========================================================================
 
 #include <jni.h>
@@ -16,7 +16,7 @@
 
 
 // helper function to be called in Java for making svm-train
-extern "C" void Java_shih_iris_com_test_MainActivity_jniSvmTrain(JNIEnv *env, jobject obj, jstring cmdIn){
+extern "C" void Java_shih_iris_com_activityRecognitionApp_MainActivity_jniSvmTrain(JNIEnv *env, jobject obj, jstring cmdIn){
 	const char *cmd = env->GetStringUTFChars(cmdIn, 0);
 	debug("jniSvmTrain cmd = %s", cmd);
 
@@ -41,7 +41,7 @@ extern "C" void Java_shih_iris_com_test_MainActivity_jniSvmTrain(JNIEnv *env, jo
 }
 
 // helper function to be called in Java for making svm-predict
-extern "C" void Java_shih_iris_com_test_MainActivity_jniSvmPredict(JNIEnv *env, jobject obj, jstring cmdIn){
+extern "C" void Java_shih_iris_com_activityRecognitionApp_MainActivity_jniSvmPredict(JNIEnv *env, jobject obj, jstring cmdIn){
 	const char *cmd = env->GetStringUTFChars(cmdIn, 0);
 	debug("jniSvmPredict cmd = %s", cmd);
 
@@ -68,13 +68,13 @@ extern "C" void Java_shih_iris_com_test_MainActivity_jniSvmPredict(JNIEnv *env, 
 
 
 /*
-*  just some test functions -> can be removed
+*  just some activityRecognitionApp functions -> can be removed
 */
-extern "C" JNIEXPORT int JNICALL Java_shih_iris_com_test_MainActivity_testInt(JNIEnv * env, jobject obj){
+extern "C" JNIEXPORT int JNICALL Java_shih_iris_com_activityRecognitionApp_MainActivity_activityRecognitionAppInt(JNIEnv * env, jobject obj){
 	return 5566;
 }
 
-extern "C" void Java_shih_iris_com_test_MainActivity_testLog(JNIEnv *env, jobject obj, jstring logThis){
+extern "C" void Java_shih_iris_com_activityRecognitionApp_MainActivity_activityRecognitionAppLog(JNIEnv *env, jobject obj, jstring logThis){
 	const char * szLogThis = env->GetStringUTFChars(logThis, 0);
 	debug("%s",szLogThis);
 

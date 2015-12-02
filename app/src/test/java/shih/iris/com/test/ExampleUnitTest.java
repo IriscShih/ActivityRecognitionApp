@@ -1,4 +1,4 @@
-package shih.iris.com.test;
+package shih.iris.com.activityRecognitionApp;
 
 import org.junit.Test;
 

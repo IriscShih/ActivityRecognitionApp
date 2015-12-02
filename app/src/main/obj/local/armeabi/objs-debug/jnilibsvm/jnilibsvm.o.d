@@ -1,5 +1,5 @@
-/Users/pearl790131/Desktop/android-play-location/Test/app/src/main/obj/local/armeabi/objs-debug/jnilibsvm/jnilibsvm.o: \
- /Users/pearl790131/Desktop/android-play-location/Test/app/src/main/jni/jnilibsvm.cpp \
+/Users/pearl790131/Desktop/android-play-location/ActivityRecognitionApp/app/src/main/obj/local/armeabi/objs-debug/jnilibsvm/jnilibsvm.o: \
+ /Users/pearl790131/Desktop/android-play-location/ActivityRecognitionApp/app/src/main/jni/jnilibsvm.cpp \
  /Users/pearl790131/Desktop/android-play-location/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/jni.h \
  /Users/pearl790131/Desktop/android-play-location/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/cdefs.h \
  /Users/pearl790131/Desktop/android-play-location/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -25,9 +25,9 @@
  /Users/pearl790131/Desktop/android-play-location/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/strings.h \
  /Users/pearl790131/Desktop/android-play-location/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/memory.h \
  /Users/pearl790131/Desktop/android-play-location/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/include/vector \
- /Users/pearl790131/Desktop/android-play-location/Test/app/src/main/jni/./libsvm/svm-train.h \
- /Users/pearl790131/Desktop/android-play-location/Test/app/src/main/jni/./libsvm/svm-predict.h \
- /Users/pearl790131/Desktop/android-play-location/Test/app/src/main/jni/common.h \
+ /Users/pearl790131/Desktop/android-play-location/ActivityRecognitionApp/app/src/main/jni/./libsvm/svm-train.h \
+ /Users/pearl790131/Desktop/android-play-location/ActivityRecognitionApp/app/src/main/jni/./libsvm/svm-predict.h \
+ /Users/pearl790131/Desktop/android-play-location/ActivityRecognitionApp/app/src/main/jni/common.h \
  /Users/pearl790131/Desktop/android-play-location/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/include/string \
  /Users/pearl790131/Desktop/android-play-location/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/fcntl.h \
  /Users/pearl790131/Desktop/android-play-location/android-ndk-r10e/platforms/android-3/arch-arm/usr/include/linux/fcntl.h \
@@ -96,11 +96,11 @@
 
 /Users/pearl790131/Desktop/android-play-location/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/include/vector:
 
-/Users/pearl790131/Desktop/android-play-location/Test/app/src/main/jni/./libsvm/svm-train.h:
+/Users/pearl790131/Desktop/android-play-location/ActivityRecognitionApp/app/src/main/jni/./libsvm/svm-train.h:
 
-/Users/pearl790131/Desktop/android-play-location/Test/app/src/main/jni/./libsvm/svm-predict.h:
+/Users/pearl790131/Desktop/android-play-location/ActivityRecognitionApp/app/src/main/jni/./libsvm/svm-predict.h:
 
-/Users/pearl790131/Desktop/android-play-location/Test/app/src/main/jni/common.h:
+/Users/pearl790131/Desktop/android-play-location/ActivityRecognitionApp/app/src/main/jni/common.h:
 
 /Users/pearl790131/Desktop/android-play-location/android-ndk-r10e/sources/cxx-stl/gnu-libstdc++/4.8/include/string:
 

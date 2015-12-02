@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="shih.iris.com.test.MainActivity"
+    tools:context="shih.iris.com.activityRecognitionApp.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <TextView
@@ -18,87 +18,43 @@
         android:id="@+id/output"
         android:text="Hello World!" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/label_x"
-        android:text="Acceleration in x direction : "
-        android:layout_below="@+id/output"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="32dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/label_y"
-        android:text="Acceleration in y direction : "
-        android:layout_below="@+id/label_x"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/label_z"
-        android:text="Acceleration in z direction : "
-        android:layout_below="@+id/label_y"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/x"
-        android:text="No data receive!"
-        android:layout_alignTop="@+id/label_x"
-        android:layout_toRightOf="@+id/label_x"
-        android:layout_toEndOf="@+id/label_x" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/y"
-        android:text="No data receive!"
-        android:layout_below="@+id/x"
-        android:layout_alignLeft="@+id/x"
-        android:layout_alignStart="@+id/x" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/z"
-        android:text="No data receive!"
-        android:layout_below="@+id/y"
-        android:layout_alignLeft="@+id/y"
-        android:layout_alignStart="@+id/y" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start!"
-        android:id="@+id/button1"
-        android:layout_marginTop="35dp"
-        android:layout_below="@+id/label_z"
+        android:id="@+id/cmdRecord"
+        android:layout_marginTop="53dp"
+        android:layout_below="@+id/output"
         android:layout_centerHorizontal="true" />
 
-    <Button
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Check Out Your Activity!"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button1"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/startTimeOffset"
+        android:text="5000"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/cmdRecord"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:ems="10"
+        android:id="@+id/recordDuration"
+        android:text="10000"
+        android:layout_below="@+id/startTimeOffset"
         android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/activity"
-        android:text="Your activity is..."
-        android:layout_marginTop="73dp"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/result"
+        android:layout_below="@+id/recordDuration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp" />
 
 
 </RelativeLayout>
