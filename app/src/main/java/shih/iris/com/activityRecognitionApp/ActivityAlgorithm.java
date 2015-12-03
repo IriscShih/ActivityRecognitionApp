@@ -13,7 +13,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 
-
 /**
  * Created by iriscshih on 12/2/15.
  */
@@ -22,14 +21,15 @@ public class ActivityAlgorithm {
     private static final String LOG_TAG = "ActivityRecognitionApp";
     String appFolderPath;
     String systemPath;
+
     // link jni library
+    // more detail:https://github.com/yctung/AndroidLibSvm
     static {
         System.loadLibrary("jnilibsvm");
     }
     // connect the native functions
     private native void jniSvmTrain(String cmd);
     private native void jniSvmPredict(String cmd);
-
 
     private ArrayList<SensorData> sensorData;
     private Context activityContext;
@@ -59,9 +59,9 @@ public class ActivityAlgorithm {
             svmClassification();
 
         }
-
-        // Return true if you are running, otherwise false
+        // Return true if user is running, otherwise false
         return true;
+
     }
 
     public void svmClassification(){
@@ -75,11 +75,12 @@ public class ActivityAlgorithm {
         // Assign model/output paths
         // Use user's x,,y,z acceleration as features
         String dataTrainPath = appFolderPath+"trainingData";
-        String dataPredictPath = appFolderPath+"sensorData ";
-        String modelPath = appFolderPath+"model ";
-        String outputPath = appFolderPath+"predict ";
+        String dataPredictPath = appFolderPath+"sensorData";
+        String modelPath = appFolderPath+"model";
+        String outputPath = appFolderPath+"predict";
 
         // TODO:timestamps should be also part of the feature for calculating the variance/std of the x,y,z acceleration
+        // TODO:sum of the absolute values of x,y,z acceleration can be another feature
 
         if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
             try {

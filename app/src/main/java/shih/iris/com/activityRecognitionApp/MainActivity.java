@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         etDuration = (EditText) findViewById(R.id.recordDuration);
         tvResult = (TextView) findViewById(R.id.result);
 
-
+        // Setup accelerometer sensor
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 

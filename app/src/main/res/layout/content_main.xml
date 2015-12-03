@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:text="Start!"
         android:id="@+id/cmdRecord"
-        android:layout_marginTop="53dp"
+        android:layout_marginTop="39dp"
         android:layout_below="@+id/output"
         android:layout_centerHorizontal="true" />
 
@@ -34,9 +34,9 @@
         android:ems="10"
         android:id="@+id/startTimeOffset"
         android:text="5000"
-        android:layout_marginTop="29dp"
-        android:layout_below="@+id/cmdRecord"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/recordDuration"
+        android:layout_alignStart="@+id/recordDuration" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
         android:ems="10"
         android:id="@+id/recordDuration"
         android:text="10000"
-        android:layout_below="@+id/startTimeOffset"
+        android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true" />
 
     <TextView
@@ -55,6 +55,25 @@
         android:layout_below="@+id/recordDuration"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Start time (ms):"
+        android:id="@+id/textView"
+        android:layout_below="@+id/cmdRecord"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Record time (ms):"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/startTimeOffset"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
